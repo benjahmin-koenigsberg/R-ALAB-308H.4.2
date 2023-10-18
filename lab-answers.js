@@ -23,9 +23,21 @@ for (let i = 0; i<200; i+=2){
 // This is a classic problem that you should get really comfortable solving.If you've solved it before, try to make it more elegant and shorter.
 
 // Write a Javascript Application that logs all numbers from 1 - 100.
-// If a number is divisible by 3, log "Fizz" instead of the number.
-// If a number is divisible by 5, log "Buzz" instead of the number.
-// If a number is divisible by 3 and 5, log "FizzBuzz" instead of the number.
+for (let i =1; i<=100; i++){
+    // If a number is divisible by 3 and 5, log "FizzBuzz" instead of the number.
+if ( i % 3 === 0 && i % 5 === 0 ){
+    console.log("FizzBuzz");
+}
+    // If a number is divisible by 3, log "Fizz" instead of the number.
+if ( i % 3 === 0){
+    console.log("Fizz");
+}
+    // If a number is divisible by 5, log "Buzz" instead of the number.
+if ( i % 5 === 0){
+    console.log("Buzz");
+}
+}
+
 // The commit message should read: "Fizz Buzz answered"
 
 
