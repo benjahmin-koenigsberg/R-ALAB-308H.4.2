@@ -6,7 +6,7 @@
 lab-answers.js
 ```
 
-#####Learning Objectives
+##### Learning Objectives
 
  In this lab, you'll be solving some traditional challenges that will test your ability to:
 
@@ -17,7 +17,7 @@ lab-answers.js
 
 
 
-#####Instructions
+##### Instructions
 
 - Create a local JavaScript file to record your answers
 - Keep your answers organized! Included a commented header for each section in your answers file.
