@@ -119,7 +119,7 @@ favMovies.splice(DUId, 1, "Avatar");
 
 //     slice the last half of the array. (Challenge yourself and try to programatically determine the middle of the array rather than counting it and hard coding it.)
 const halfId = Math.ceil(favMovies.length / 2);
-console.log(halfId)
+//console.log(halfId)
 const halfArr = favMovies.slice(halfId, favMovies.length)
 //console.log(halfArr)
 // Thought Question: Did this permanently alter our array ?
@@ -133,7 +133,7 @@ const halfArr = favMovies.slice(halfId, favMovies.length)
 //console.log("The slice() method returns a new copy of the origanl cut to whatever length specified from args or a whole copy without any args")
 //     console.log your final results.
 // After running the above tasks, console.log the index of "Fast and Furious."
-console.log(favMovies.indexOf("Fast and Furious"))
+//console.log(favMovies.indexOf("Fast and Furious"))
 // We removed it from the array.What value do we get when we look for the index of something that is not in the array ?
 
 // I believe I followed the instruction although Fast and Furious are still in my array?
@@ -142,18 +142,28 @@ console.log(favMovies.indexOf("Fast and Furious"))
 
 // Because we were mutating or copying the array vs re assigning it
 
-//         The commit message should read: "Methods Revisited answered"
+//    The commit message should read: "Methods Revisited answered"
 
 
 // Where is Waldo
 // With the following multi - dimensional array:
 
-// const whereIsWaldo = [["Timmy", "Frank"], "Eggbert",
-// ["Lucinda", "Jacc", "Neff", "Snoop"],
-// ["Petunia", ["Baked Goods", "Waldo"]]];
+const whereIsWaldo = [["Timmy", "Frank"], "Eggbert",
+["Lucinda", "Jacc", "Neff", "Snoop"],
+["Petunia", ["Baked Goods", "Waldo"]]];
+
 // Remove Eggbert(hint look at the slice / splice methods).
+
+whereIsWaldo.splice(1,1)
+//console.log(whereIsWaldo.splice(1,1))
+//console.log(whereIsWaldo)
+
 //     Change "Neff" to "No One".
+whereIsWaldo[1][2] = "No One"
+//console.log(whereIsWaldo)
 // Access and console.log "Waldo".
+const Waldo = whereIsWaldo[2][1][1]
+console.log(Waldo)
 // The commit message should read: "Where is Waldo answered"
 
 
