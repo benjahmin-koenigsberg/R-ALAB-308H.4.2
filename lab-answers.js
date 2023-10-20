@@ -26,15 +26,15 @@ for (let i = 0; i<200; i+=2){
 for (let i =1; i<=100; i++){
     // If a number is divisible by 3 and 5, log "FizzBuzz" instead of the number.
 if ( i % 3 === 0 && i % 5 === 0 ){
-    console.log("FizzBuzz");
+   // console.log("FizzBuzz");
 }
     // If a number is divisible by 3, log "Fizz" instead of the number.
 if ( i % 3 === 0){
-    console.log("Fizz");
+   // console.log("Fizz");
 }
     // If a number is divisible by 5, log "Buzz" instead of the number.
 if ( i % 5 === 0){
-    console.log("Buzz");
+   // console.log("Buzz");
 }
 }
 
@@ -60,15 +60,20 @@ wolfy[3] = "Gotham City";
 //console.log(wolfy)
 // Give D'Art a second hometown by adding "Hawkins"
 dart.push("Hawkins");
-console.log(dart)
+//console.log(dart)
 // Porgee decides that Wolfy can't be named "Wolfy" anymore. Remove "Wolfy" from the wolfy array and replace it with "Gameboy".
 wolfy[0] = "Gameboy"
 // The commit message should read: "Wild Wild Life answered"
 
 
 // Yell at the Ninja Turtles
+
 // Create an array with the members of the ninja turtles(Donatello, Leonardo, Raphael, Michaelangelo).
+const ninjaTutrles = ["Donatello", "Leonardo", "Raphael", "Michaelangelo"]
 // Use a for of loop to call toUpperCase() on each of them and print out the result.
+for (let i = 0; i < ninjaTutrles.length; i++){
+   // console.log(ninjaTutrles[i].toUpperCase());
+}
 //     Haven't heard of for of loops?
 
 // As a developer, you'll be a lifelong learner and constantly encountering new things. We'll give you little stretches like this to get you used to looking at documentation and figuring some things out on your own.You've got this!
