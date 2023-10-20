@@ -193,7 +193,7 @@ while (count < 20){
 //     Hint: If you check the length of the array divided by two, you might get not get a whole number.In which case, look into Math.floor().
  const nums = [14, 11, 16, 15, 13, 16, 15, 17, 19, 11, 12, 14, 19, 11, 15, 17, 11, 18, 12, 17, 12, 71, 18, 15, 12];
 const medianId = Math.floor(nums.length / 2)
-console.log(nums[medianId])
+//console.log(nums[medianId])
 // // Expected output: 15
 //i got 19?
 
@@ -205,44 +205,46 @@ console.log(nums[medianId])
 
 // Below, we've given you examples of Kristyn and Thom's closets modeled as data in JavaScript.Use this data to answer the following questions.
 
-// const kristynsCloset = [
-//     "left shoe",
-//     "cowboy boots",
-//     "right sock",
-//     "Per Scholas hoodie",
-//     "green pants",
-//     "yellow knit hat",
-//     "marshmallow peeps"
-// ];
+const kristynsCloset = [
+    "left shoe",
+    "cowboy boots",
+    "right sock",
+    "Per Scholas hoodie",
+    "green pants",
+    "yellow knit hat",
+    "marshmallow peeps"
+];
 
-// // Thom's closet is more complicated. Check out this nested data structure!!
-// const thomsCloset = [
-//     [
-//         // These are Thom's shirts
-//         "grey button-up",
-//         "dark grey button-up",
-//         "light blue button-up",
-//         "blue button-up",
-//     ], [
-//         // These are Thom's pants
-//         "grey jeans",
-//         "jeans",
-//         "PJs"
-//     ], [
-//         // Thom's accessories
-//         "wool mittens",
-//         "wool scarf",
-//         "raybans"
-//     ]
-// ];
+// Thom's closet is more complicated. Check out this nested data structure!!
+const thomsCloset = [
+    [
+        // These are Thom's shirts
+        "grey button-up",
+        "dark grey button-up",
+        "light blue button-up",
+        "blue button-up",
+    ], [
+        // These are Thom's pants
+        "grey jeans",
+        "jeans",
+        "PJs"
+    ], [
+        // Thom's accessories
+        "wool mittens",
+        "wool scarf",
+        "raybans"
+    ]
+];
 
 // Alien Attire
 // Kristyn's left shoe has traveled through time and space and turned up in Thom's accessories drawer!
 
 // Remove Kristyn's shoe from the array and save it to the variable kristynsShoe.
+let kristynsShoe = kristynsCloset[0]
 // Use that variable to add Kristyn's lost shoe to Thom's accessories array.
+thomsCloset[2].push(kristynsShoe)
 // The commit message should read: "Kristyn's lost shoe found"
-
+console.log(thomsCloset)
 
 // Dress Us Up
 // Modify your code to put together three separate outfits for Kristyn and Thom.Put the output in a sentence to tell us what we'll be wearing. Mix and match!
