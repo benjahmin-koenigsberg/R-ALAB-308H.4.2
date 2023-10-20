@@ -179,8 +179,8 @@ function random_item(items) {
 
 let count = 0
 while (count < 20){
-   console.log("Love me, pet me! HSSSSSS!")
-   console.log(random_item(catSayings))
+   //console.log("Love me, pet me! HSSSSSS!")
+   //console.log(random_item(catSayings))
     count++;
 }
 
@@ -191,9 +191,12 @@ while (count < 20){
 // Find the median number in the following nums array, then console.log that number.
 
 //     Hint: If you check the length of the array divided by two, you might get not get a whole number.In which case, look into Math.floor().
-// const nums = [14, 11, 16, 15, 13, 16, 15, 17, 19, 11, 12, 14, 19, 11, 15, 17, 11, 18, 12, 17, 12, 71, 18, 15, 12];
-
+ const nums = [14, 11, 16, 15, 13, 16, 15, 17, 19, 11, 12, 14, 19, 11, 15, 17, 11, 18, 12, 17, 12, 71, 18, 15, 12];
+const medianId = Math.floor(nums.length / 2)
+console.log(nums[medianId])
 // // Expected output: 15
+//i got 19?
+
 // The commit message should read: "Find the Median answered"
 
 
