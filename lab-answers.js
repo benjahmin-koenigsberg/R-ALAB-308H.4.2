@@ -163,15 +163,26 @@ whereIsWaldo[1][2] = "No One"
 //console.log(whereIsWaldo)
 // Access and console.log "Waldo".
 const Waldo = whereIsWaldo[2][1][1]
-console.log(Waldo)
+//console.log(Waldo)
 // The commit message should read: "Where is Waldo answered"
 
 
 // Excited Kitten
 // Write code that logs "Love me, pet me! HSSSSSS!" 20 times.
+
 // For every even number in your loop, log "...human... why you taking pictures of me...?", "...the catnip made me do it...", or "...why does the red dot always get away...?" at random.
-// Need some hints ? Click here!
-// Image of cat with funny quote about dot
+const catSayings = ["...human... why you taking pictures of me...?", "...the catnip made me do it...", "...why does the red dot always get away...?"];
+
+function random_item(items) {
+  return  items[Math.floor(Math.random() * items.length)]
+}
+
+let count = 0
+while (count < 20){
+   console.log("Love me, pet me! HSSSSSS!")
+   console.log(random_item(catSayings))
+    count++;
+}
 
 // The commit message should read: "Excited Kittens answered"
 
