@@ -260,7 +260,7 @@ const mixedUpClosets = [...kristynsCloset, ...thomasMixedUpCloset]
 // Dirty Laundry
 // Time to do laundry.Loop through Kristyn's closet and log the sentence "WHIRR: Now washing (item)" for each item in the array.
 for (let clothes of kristynsCloset){
-  console.log( `WHIRR: Now washing ${clothes}` )
+  //console.log( `WHIRR: Now washing ${clothes}` )
 }
 
 
@@ -269,5 +269,9 @@ for (let clothes of kristynsCloset){
 
 // Inventory
 // Thom wants to do inventory on his closet.Using bracket notation, log the arrays containing all of Thom's shirts, pants, and accessories.
+console.log(thomsCloset[0])
+console.log(thomsCloset[1])
+console.log(thomsCloset[2])
+
 
 // The commit message should read: "Hungry for More: Complete"
