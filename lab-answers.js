@@ -252,13 +252,17 @@ const thomasMixedUpCloset = [...thomsCloset[0], ...thomsCloset[1], ...thomsClose
 const mixedUpClosets = [...kristynsCloset, ...thomasMixedUpCloset]
 
 
-console.log(`Today Kristyn and Thomas are mix and mathcing three seperate outfits! The first outfits will be a combination of a ${random_item(mixedUpClosets)},a ${random_item(mixedUpClosets)} and a ${random_item(mixedUpClosets)} to start the day. In the middle of the day, they will switch to a ${random_item(mixedUpClosets)},a ${random_item(mixedUpClosets)} and a ${random_item(mixedUpClosets)}. FInally for the evening they will wear a  ${random_item(mixedUpClosets)}, a ${random_item(mixedUpClosets)} and some ${random_item(mixedUpClosets)}`)
+//console.log(`Today Kristyn and Thomas are mix and mathcing three seperate outfits! The first outfits will be a combination of a ${random_item(mixedUpClosets)},a ${random_item(mixedUpClosets)} and a ${random_item(mixedUpClosets)} to start the day. In the middle of the day, they will switch to a ${random_item(mixedUpClosets)},a ${random_item(mixedUpClosets)} and a ${random_item(mixedUpClosets)}. FInally for the evening they will wear a  ${random_item(mixedUpClosets)}, a ${random_item(mixedUpClosets)} and some ${random_item(mixedUpClosets)}`)
 
 // The commit message should read: "Kristyn and Thom have their outfits ready for class - array practice"
 
 
 // Dirty Laundry
 // Time to do laundry.Loop through Kristyn's closet and log the sentence "WHIRR: Now washing (item)" for each item in the array.
+for (let clothes of kristynsCloset){
+  console.log( `WHIRR: Now washing ${clothes}` )
+}
+
 
 // The commit message should read: "Washed dirty laundry"
 
