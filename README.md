@@ -1,6 +1,6 @@
 #### About this repo
 
-###R-ALAB 308H.4.2 - Arrays, Loops, and Conditionals
+### R-ALAB 308H.4.2 - Arrays, Loops, and Conditionals
 
 ```
 lab-answers.js
