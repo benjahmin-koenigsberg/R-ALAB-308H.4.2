@@ -2,7 +2,7 @@
 // Write a for loop that will log the numbers 1 through 20.
 
 for (let i = 1; i<20; i++){
-    console.log(i);
+   // console.log(i);
 }
 
 // The commit message should read: "Easy Going answered"
@@ -11,7 +11,7 @@ for (let i = 1; i<20; i++){
 // Get Even
 // Write a for loop that will log only the even numbers in 0 through 200.
 for (let i = 0; i<200; i+=2){
-    console.log(i)
+   // console.log(i)
 }
 
 // Hint: Think about the increment expression.
@@ -84,30 +84,64 @@ for (let i = 0; i < ninjaTutrles.length; i++){
 // Methods, Revisited
 // Here is a list of favorite movies:
 
-// const favMovies = ['Jaws', 'The Fellowship of the Ring', 'Howl\'s Moving Castle', 'Django Unchained', 'Cloud Atlas', 'The Usual Suspects', 'Toy Story', 'Conan the Barbarian', 'Titanic', 'Harry Potter', 'Fried Green Tomatoes', 'Volver', 'Oculus', 'Seven', 'Black Panther', 'Harry Potter', 'Imitation of Life', 'Snatch', 'Fast and Furious'];
+const favMovies = ['Jaws', 'The Fellowship of the Ring', 'Howl\'s Moving Castle', 'Django Unchained', 'Cloud Atlas', 'The Usual Suspects', 'Toy Story', 'Conan the Barbarian', 'Titanic', 'Harry Potter', 'Fried Green Tomatoes', 'Volver', 'Oculus', 'Seven', 'Black Panther', 'Harry Potter', 'Imitation of Life', 'Snatch', 'Fast and Furious'];
 // Console log the index of Titanic.
+//console.log(favMovies.find(movie=>movie==='Titanic'))
 // Do the following and console.log the final results. (I have included some thought questions; you don't have to write out an answer for those marked as such).
 
 // Note: if you have to add to the array, feel free to add any movie you'd like.
-
+favMovies.push('Vegucated')
 // Use the.sort method.
+//console.log(favMovies)
+favMovies.sort()
+//console.log(favMovies)
 // Thought Question: What did this do to the array ? Did it permanently alter it ?
+
+//yes it changed the order of movies
+
 //     Use the method pop.
+favMovies.pop()
 //         push "Guardians of the Galaxy".
+favMovies.push("Gauridans of the Galaxy")
 // Reverse the array.
+favMovies.reverse()
 // Use the shift method.
+favMovies.shift()
 //     unshift - what does it return?
-//         splice "Django Unchained" and add "Avatar"(try finding the index of "Django Unchained" instead of counting it yourself).
+// returns the new length of the array.
+
+//splice "Django Unchained" and add "Avatar"(try finding the index of "Django Unchained" instead of counting it yourself).
+const DUId = favMovies.indexOf("Django Unchained")
+favMovies.splice(DUId, 1, "Avatar");
+//console.log(favMovies)
 // Thought Question: Did this permanently alter our array ?
+//yes
+
 //     slice the last half of the array. (Challenge yourself and try to programatically determine the middle of the array rather than counting it and hard coding it.)
+const halfId = Math.ceil(favMovies.length / 2);
+console.log(halfId)
+const halfArr = favMovies.slice(halfId, favMovies.length)
+//console.log(halfArr)
 // Thought Question: Did this permanently alter our array ?
+
+//no
+
 //     Store the value of your slice in a variable and console.log it.
+//const halfArr = favMovies.slice(halfId)
+//console.log(halfArr)
 // Thought Question: What is going on here ?
+//console.log("The slice() method returns a new copy of the origanl cut to whatever length specified from args or a whole copy without any args")
 //     console.log your final results.
 // After running the above tasks, console.log the index of "Fast and Furious."
-
+console.log(favMovies.indexOf("Fast and Furious"))
 // We removed it from the array.What value do we get when we look for the index of something that is not in the array ?
+
+// I believe I followed the instruction although Fast and Furious are still in my array?
+
 //     Thought Question: We declared the variable favMovies with const, and yet we were allowed to change the array.Weird?Should we have used let?
+
+// Because we were mutating or copying the array vs re assigning it
+
 //         The commit message should read: "Methods Revisited answered"
 
 
