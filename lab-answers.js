@@ -244,10 +244,15 @@ let kristynsShoe = kristynsCloset[0]
 // Use that variable to add Kristyn's lost shoe to Thom's accessories array.
 thomsCloset[2].push(kristynsShoe)
 // The commit message should read: "Kristyn's lost shoe found"
-console.log(thomsCloset)
+//console.log(thomsCloset)
 
 // Dress Us Up
 // Modify your code to put together three separate outfits for Kristyn and Thom.Put the output in a sentence to tell us what we'll be wearing. Mix and match!
+const thomasMixedUpCloset = [...thomsCloset[0], ...thomsCloset[1], ...thomsCloset[2]]
+const mixedUpClosets = [...kristynsCloset, ...thomasMixedUpCloset]
+
+
+console.log(`Today Kristyn and Thomas are mix and mathcing three seperate outfits! The first outfits will be a combination of a ${random_item(mixedUpClosets)},a ${random_item(mixedUpClosets)} and a ${random_item(mixedUpClosets)} to start the day. In the middle of the day, they will switch to a ${random_item(mixedUpClosets)},a ${random_item(mixedUpClosets)} and a ${random_item(mixedUpClosets)}. FInally for the evening they will wear a  ${random_item(mixedUpClosets)}, a ${random_item(mixedUpClosets)} and some ${random_item(mixedUpClosets)}`)
 
 // The commit message should read: "Kristyn and Thom have their outfits ready for class - array practice"
 
